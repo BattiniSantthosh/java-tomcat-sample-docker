@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'mvn -f pom.xml clean package'
+                sh '/usr/local/Cellar/maven/3.8.1/libexec/bin/mvn -f pom.xml clean package'
             }
             post {
                 success {
